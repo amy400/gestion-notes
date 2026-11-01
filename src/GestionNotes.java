@@ -4,5 +4,12 @@ public class GestionNotes {
         System.out.println("========================");
         System.out.println("  RELEVE DE NOTES - L2 ");
         System.out.println("=========================");
+        String prenom ="Awa";
+        String nom ="Ndiaye";
+        String matricule = "ISI-2026-0142";
+        int age = 20;
+        System.out.println("Etudiant : " + prenom + "\t" + nom + "\t (" + age + "\t ans)");
+        System.out.println("Matricule : " + matricule);
+
     }
 }
