@@ -26,8 +26,31 @@ public class GestionNotes {
         System.out.print("Entez matricule ");
         clavier.nextLine();
         String matricule = clavier.nextLine();
+        System.out.print("entrez le note de devoir d algo ");
+        double devoirAlgo = clavier.nextDouble();
+        System.out.print("entrez le note  examen d algo ");
+        double examenAlgo = clavier.nextDouble();
+        System.out.print("entrez le note de devoir base de donnee ");
+        double devoirBd = clavier.nextDouble();
+        System.out.print("entrez le note  examen base de donnee ");
+        double examenBd = clavier.nextDouble();
+        System.out.print("entrez le note de devoir  l anglais  ");
+        double devoirAnglais = clavier.nextDouble();
+        System.out.print("entrez le note  examen l anglais  ");
+        double examenAnglais = clavier.nextDouble();
+        double moyennealgo = devoirAlgo * NDEVOIR + examenAlgo * NEXAMEN;
+        double moyenneBd = devoirBd * NDEVOIR +examenBd * NEXAMEN;
+        double moyenneanglais = devoirAnglais * NDEVOIR + examenAnglais * NEXAMEN;
+        double moyencoefAL = moyennealgo * COEFALGO;
+        double moyencoefBd = moyenneBd * COEFBD;
+        double moyencoefA = moyenneanglais * COEFA;
+        double sommeCoefs = moyencoefAL + moyencoefBd + moyencoefA;
+        double moyenneGenerale = sommeCoefs/ 6;
         System.out.println("Etudiant : " + prenom + " " + nom + " (" + age + " ans)");
         System.out.println("Matricule : " + matricule);
+        System.out.println("moyAlgo " + moyennealgo + "| moyBd  " + moyenneBd + "| moyAnglais  "  + moyenneanglais);
+        System.out.println("La moyenne generale est "+ moyenneGenerale);
+
         clavier.close();
 
 
